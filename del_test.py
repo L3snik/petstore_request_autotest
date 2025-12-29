@@ -1,8 +1,7 @@
-import requests
 import json
 
+import requests
 
-#  Позитивные кейсы ======================================================================
 
 def test_delete_remove_existing_pet():
     response = requests.delete("https://petstore.swagger.io/v2/pet/2")
