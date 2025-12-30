@@ -2,18 +2,7 @@ import json
 
 import requests
 
-pet = {
-    "id": 2,
-    "category": {"id": 1, "name": "Кот"},
-    "name": "Васян",
-    "photoUrls": ["https://photo.com/1"],
-    "tags": [
-        {"id": 1, "name": "Дворовый"},
-        {"id": 2, "name": "Отъевшийся"},
-        {"id": 3, "name": "Довольный"},
-    ],
-    "status": "available",
-}
+from variables import pet_for_single_put_test as pet
 
 
 def test_put_edit_existing_pet():

@@ -2,9 +2,9 @@ import json
 
 import requests
 
-correct_id = 2
-inexisting_id = 8765456
-incorrect_id = "гпллрцилал"
+from variables import correct_id_for_single_get_test as correct_id
+from variables import incorrect_id_for_single_get_test as incorrect_id
+from variables import inexisting_id_for_single_get_test as inexisting_id
 
 
 def test_get_pet_by_correct_id():

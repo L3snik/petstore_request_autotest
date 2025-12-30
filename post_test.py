@@ -2,14 +2,7 @@ import json
 
 import requests
 
-new_pet = {
-    "id": 2,
-    "category": {"id": 2, "name": "Кот"},
-    "name": "Васян",
-    "photoUrls": ["https://photo.com/1"],
-    "tags": [{"id": 1, "name": "Дворовый"}, {"id": 2, "name": "Голодный"}],
-    "status": "available",
-}
+from variables import new_pet_for_single_post_test as new_pet
 
 
 def test_post_create_new_correct_pet():
